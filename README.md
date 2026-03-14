@@ -22,6 +22,14 @@ A sleek **dark-themed expense tracker** that allows users to track their daily, 
 
 ---
 
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Charts
+![Charts](screenshots/charts.png)
+
 ## Installation & Usage
 
 1. **Clone the repository**
