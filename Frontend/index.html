@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <h2>Total Spending: ₹<span id="totalAmount">0</span></h2>
+
+        <!-- Form -->
+        <div class="form">
+            <input type="text" id="title" placeholder="Expense name">
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="category" placeholder="Category">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <!-- Expenses List -->
+        <h2>Expenses</h2>
+        <ul id="expenseList"></ul>
+
+        <!-- Charts -->
+        <h2>Spending by Category</h2>
+        <canvas id="expenseChart"></canvas>
+
+        <h2>Weekly Spending</h2>
+        <canvas id="weeklyChart"></canvas>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

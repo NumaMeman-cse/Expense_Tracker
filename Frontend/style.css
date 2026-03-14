@@ -1,0 +1,137 @@
+/* ---------- Fonts & Body ---------- */
+body {
+    margin:0;
+    font-family:'Inter', sans-serif;
+    background:#121212;
+    color:#e5e5e5;
+}
+
+/* ---------- Container ---------- */
+.container {
+    width:90%;
+    max-width:800px;
+    margin:40px auto;
+    background:#1e1e1e;
+    padding:30px 25px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    font-family:'Raleway', sans-serif;
+    font-size:32px;
+    text-align:center;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:8px;
+    color:#ffffff;
+}
+
+h2 {
+    font-family:'Raleway', sans-serif;
+    font-size:18px;
+    font-weight:500;
+    color:#d1d5db;
+    margin-top:25px;
+}
+
+/* ---------- Form ---------- */
+.form {
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.form input {
+    flex:1;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #333;
+    background:#2a2a2a;
+    color:#e5e5e5;
+}
+
+.form input::placeholder {
+    color:#888;
+}
+
+.form button {
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    background:#4b5563; /* subtle accent */
+    color:#e5e5e5;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.form button:hover {
+    background:#6b7280;
+    transform:scale(1.03);
+}
+
+/* ---------- Expense List ---------- */
+#expenseList {
+    list-style:none;
+    padding:0;
+    margin-top:15px;
+}
+
+#expenseList li {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-bottom:8px;
+    background:#2a2a2a;
+    border-radius:8px;
+}
+
+#expenseList button {
+    border:none;
+    padding:6px 10px;
+    border-radius:5px;
+    background:#3b3b3b;
+    color:#e5e5e5;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+#expenseList button:hover {
+    background:#505050;
+}
+
+/* ---------- Charts ---------- */
+canvas {
+    margin-top:20px;
+    background:#1e1e1e;
+    padding:12px;
+    border-radius:8px;
+    max-height:300px; /* keeps charts proportional */
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .form {
+        flex-direction: column;
+    }
+    .form input, .form button {
+        width:100%;
+    }
+
+    #expenseList li {
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    #expenseList button {
+        margin-top:5px;
+        margin-left:0;
+    }
+
+    canvas {
+        width:100% !important;
+        height:auto !important;
+    }
+}
